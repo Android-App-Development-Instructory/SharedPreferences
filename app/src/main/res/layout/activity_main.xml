@@ -6,23 +6,26 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:gravity="center"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:id="@+id/viewLL">
 
     <EditText
         android:id="@+id/nameET"
-        android:layout_margin="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="10dp"
         android:hint="Name"
-        android:inputType="textPersonName"/>
+        android:inputType="textPersonName"
+        android:minHeight="48dp" />
 
     <EditText
         android:id="@+id/emailET"
-        android:layout_margin="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="10dp"
         android:hint="Email"
-        android:inputType="textEmailAddress"/>
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp" />
 
     <Button
         android:id="@+id/saveBTN"
@@ -51,5 +54,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Clear"/>
+
+    <Switch
+        android:id="@+id/dartModeSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:text="Dark Mode" />
 
 </LinearLayout>
